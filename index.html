@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid sticky-top p-0 m-0">
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
@@ -21,15 +21,34 @@
             </a>
         </nav>
     </header>
-    <main class="container">
+    <main class="container-fluid">
         <div id="app"></div>
+        <div class="row">
+            <div class="col-md-3 side-bar-scroll">
+                <h3>All Spells</h3>
+                <ol id="api-spells">
+                </ol>
+            </div>
+            <div class="col-md-6" id="active-spell">
+                <div class="text-center"><em>No Active Spell</em></div>
+            </div>
+            <div class="col-md-3 side-bar-scroll">
+                <h3>My Spells</h3>
+                <ol id="my-spells"></ol>
+            </div>
+        </div>
     </main>
-    <footer class="bg-dark text-light">
+    <footer class="bg-dark text-light container-fluid">
         <div class="text-center">
             <p><small>Made with love by Codeworks</small></p>
         </div>
     </footer>
 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+        integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app/main.js" type="module"></script>
 </body>
 

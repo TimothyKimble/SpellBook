@@ -1,7 +1,9 @@
-import ValuesController from "./Controllers/ValuesController.js";
+import MySpellsController from "./Controllers/mySpellsController.js";
+import SpellsController from "./Controllers/SpellsController.js";
 
 class App {
-  valuesController = new ValuesController();
+  spellsController = new SpellsController();
+  mySpellsController = new MySpellsController();
 }
 
 window["app"] = new App();
